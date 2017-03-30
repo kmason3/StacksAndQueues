@@ -1,14 +1,22 @@
 package stacksAndQueues;
 
 public class Queue extends Stack {
-
+	// Variables
 	private Node front;
 	private Node back;
 
+	/**
+	 * returns true if queue is empty
+	 */
 	public boolean isEmpty() {
 		return front == null && back == null;
 	}
 
+	/**
+	 * Adds to queue
+	 * 
+	 * @param input
+	 */
 	public void enqueue(String input) {
 		Node newNode = new Node(input);
 
@@ -24,6 +32,9 @@ public class Queue extends Stack {
 		}
 	}
 
+	/**
+	 * Prints queue
+	 */
 	public void print() {
 
 		if (isEmpty()) {
@@ -37,7 +48,7 @@ public class Queue extends Stack {
 				System.out.println(temp.getData());
 				temp = temp.getNext();
 			}
-			// System.out.println(this.back.getData());
+
 			System.out.println("");
 		}
 	}
