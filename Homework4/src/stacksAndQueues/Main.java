@@ -2,6 +2,13 @@ package stacksAndQueues;
 
 public class Main {
 	
+	public static void transStackToQueue(Stack from, Queue to){
+		while(!from.isEmpty()){
+			String temp = from.pop().getData();
+			to.enqueue(temp);
+		}
+	}
+	
 	public static void main(String[]args){
 		
 			
@@ -15,21 +22,25 @@ public class Main {
 		
 		test.print();
 		
-		test.pop();
+//		test.pop();
 		
-		test.print();
-		test.peek().print();
-		System.out.println("");
+//		test.print();
+//		test.peek().print();
+//		System.out.println("");
 		
 		Queue test1 = new Queue();
 		
-		test1.enqueue("a");
-		test1.enqueue("b");
-		test1.enqueue("c");
-		test1.enqueue("d");
+//		test1.enqueue("a");
+//		test1.enqueue("b");
+//		test1.enqueue("c");
+//		test1.enqueue("d");
+//		test1.print();
+//		test1.dequeue();
+//		test1.print();
+		
+		transStackToQueue(test, test1);
 		test1.print();
-		test1.dequeue();
-		test1.print();
+		
 	}
 
 }

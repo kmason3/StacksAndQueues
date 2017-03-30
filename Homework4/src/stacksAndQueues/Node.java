@@ -34,10 +34,10 @@ public class Node {
 	public void setNext(Node next) {
 		this.next = next;
 	}
-	
-	public void print(){
+
+	public void print() {
 		System.out.println(this.data);
-		
+
 	}
 
 }

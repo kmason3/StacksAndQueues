@@ -4,7 +4,7 @@ public class Queue extends Stack {
 	// Variables
 	private Node front;
 	private Node back;
-	
+
 	public Node peek() {
 		return this.front;
 	}
