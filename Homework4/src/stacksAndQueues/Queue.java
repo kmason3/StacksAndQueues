@@ -13,7 +13,7 @@ public class Queue extends Stack {
 	 * returns true if queue is empty
 	 */
 	public boolean isEmpty() {
-		return front == null && back == null;
+		return front == null;
 	}
 
 	/**
@@ -48,7 +48,7 @@ public class Queue extends Stack {
 
 		else {
 			Node temp = front;
-			this.front = front.getNext();
+			front = front.getNext();
 			return temp;
 		}
 	}

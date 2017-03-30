@@ -30,12 +30,10 @@ public class Stack {
 	public void push(String input) {
 		Node newNode = new Node(input);
 
-		if (isEmpty()) {
-			this.top = newNode;
-		} else {
+		
 			newNode.setNext(this.top);
 			this.top = newNode;
-		}
+		
 	}
 	/**
 	 * Shows and removes top node

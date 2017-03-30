@@ -9,18 +9,26 @@ public class Main {
 		}
 	}
 	
+	public static void transQueueToStack(Queue from, Stack to){
+		while(!from.isEmpty()){
+			String temp = from.dequeue().getData();
+			to.push(temp);
+		}
+				
+	}
+	
 	public static void main(String[]args){
 		
 			
 		Stack test = new Stack();
 		
-		test.push("a");
-		test.push("b");
-		test.push("c");
-		test.push("d");
-		test.push("e");
-		
-		test.print();
+//		test.push("a");
+//		test.push("b");
+//		test.push("c");
+//		test.push("d");
+//		test.push("e");
+//		
+//		test.print();
 		
 //		test.pop();
 		
@@ -30,16 +38,22 @@ public class Main {
 		
 		Queue test1 = new Queue();
 		
-//		test1.enqueue("a");
-//		test1.enqueue("b");
-//		test1.enqueue("c");
-//		test1.enqueue("d");
-//		test1.print();
+		test1.enqueue("a");
+		test1.enqueue("b");
+		test1.enqueue("c");
+		test1.enqueue("d");
+		test1.print();
+//		test1.dequeue();
+//		test1.dequeue();
+//		test1.dequeue();
 //		test1.dequeue();
 //		test1.print();
 		
-		transStackToQueue(test, test1);
-		test1.print();
+//		transStackToQueue(test, test1);
+//		test1.print();
+		
+		transQueueToStack(test1, test);
+		test.print();
 		
 	}
 
