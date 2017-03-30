@@ -33,6 +33,23 @@ public class Queue extends Stack {
 	}
 
 	/**
+	 * Removes first item from queue
+	 * 
+	 * @return first item from queue
+	 */
+	public Node dequeue() {
+		if (isEmpty()) {
+			return null;
+		}
+
+		else {
+			Node temp = front;
+			this.front = front.getNext();
+			return temp;
+		}
+	}
+
+	/**
 	 * Prints queue
 	 */
 	public void print() {

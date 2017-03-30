@@ -1,22 +1,22 @@
 package stacksAndQueues;
 
 public class Node {
-	
+
 	private String data;
 	private Node next;
-	
-	public Node(){
-		
+
+	public Node() {
+
 		this.setData(null);
 		this.setNext(null);
-		
+
 	}
-	
-	public Node(String input){
-		
+
+	public Node(String input) {
+
 		this.setData(input);
 		this.setNext(null);
-		
+
 	}
 
 	public String getData() {
