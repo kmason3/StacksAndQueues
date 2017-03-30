@@ -4,6 +4,10 @@ public class Queue extends Stack {
 	// Variables
 	private Node front;
 	private Node back;
+	
+	public Node peek() {
+		return this.front;
+	}
 
 	/**
 	 * returns true if queue is empty
@@ -62,7 +66,7 @@ public class Queue extends Stack {
 			Node temp = this.front;
 
 			while (temp != null) {
-				System.out.println(temp.getData());
+				temp.print();
 				temp = temp.getNext();
 			}
 

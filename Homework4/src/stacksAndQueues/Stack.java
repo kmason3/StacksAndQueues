@@ -67,7 +67,7 @@ public class Stack {
 			Node temp = this.top;
 
 			while (temp != null) {
-				System.out.println(temp.getData());
+				temp.print();
 				temp = temp.getNext();
 			}
 			System.out.println("");

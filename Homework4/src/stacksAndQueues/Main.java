@@ -5,20 +5,21 @@ public class Main {
 	public static void main(String[]args){
 		
 			
-//		Stack test = new Stack();
+		Stack test = new Stack();
 		
-//		test.push("a");
-//		test.push("b");
-//		test.push("c");
-//		test.push("d");
-//		test.push("e");
-//		
-//		test.print();
-//		
-//		test.pop();
-//		
-//		test.print();
+		test.push("a");
+		test.push("b");
+		test.push("c");
+		test.push("d");
+		test.push("e");
 		
+		test.print();
+		
+		test.pop();
+		
+		test.print();
+		test.peek().print();
+		System.out.println("");
 		
 		Queue test1 = new Queue();
 		
