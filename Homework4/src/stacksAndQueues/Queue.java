@@ -49,6 +49,8 @@ public class Queue extends Stack {
 		else {
 			Node temp = front;
 			front = front.getNext();
+			if(this.front == null)
+				this.back = null;
 			return temp;
 		}
 	}
